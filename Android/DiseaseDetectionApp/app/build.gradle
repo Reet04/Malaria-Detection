@@ -1,16 +1,29 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'com.chaquo.python'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.0"
-
+    sourceSets {
+        main {
+            python.srcDir "src/main/python"
+        }
+    }
     defaultConfig {
         applicationId "com.example.diseasedetectionapp"
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+        python {
+            pip {
+                install "scapy==v2.4.3rc1"
+                install "scipy"
+                install "requests==2.24.0"
+            }
+        }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
