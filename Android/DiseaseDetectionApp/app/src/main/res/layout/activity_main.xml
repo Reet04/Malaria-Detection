@@ -6,6 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/selectImg3"
+        android:layout_width="186dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseImgBtn"
+        app:layout_constraintVertical_bias="0.478"
+        app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
+    <ImageView
+        android:id="@+id/selectImg4"
+        android:layout_width="186dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseImgBtn"
+        app:layout_constraintVertical_bias="0.478"
+        app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
+    <ImageView
+        android:id="@+id/selectImg2"
+        android:layout_width="186dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseImgBtn"
+        app:layout_constraintVertical_bias="0.088"
+        app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -31,14 +67,27 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/selectedImageView"
-        android:layout_width="345dp"
-        android:layout_height="329dp"
+        android:id="@+id/selectImg1"
+        android:layout_width="186dp"
+        android:layout_height="146dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chooseImgBtn"
         app:layout_constraintVertical_bias="0.089"
         app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="207dp"
+        android:layout_height="93dp"
+        android:max="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseImgBtn"
+        app:layout_constraintVertical_bias="0.817" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
