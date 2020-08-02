@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void executePythonScript(){
         Python python=Python.getInstance();
-        PyObject test=python.getModule("test");
-        Log.i("PYTHON:",test.callAttr("test").toString());
+        PyObject test=python.getModule("result");
+        Log.i("PYTHON:",test.callAttr("result").toString());
     }
 
     @Override

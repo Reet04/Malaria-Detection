@@ -22,6 +22,12 @@ android {
                 install "scapy==v2.4.3rc1"
                 install "scipy"
                 install "requests==2.24.0"
+                install "keras"
+                install "keras.models"
+                install "tensorflow"
+                install "keras.preprocessing.image"
+                install "json_model"
+
             }
         }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
